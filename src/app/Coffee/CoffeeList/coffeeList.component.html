@@ -1,0 +1,15 @@
+<br>
+<div class="row">
+    <div class="col-xs-12" >
+        <button class="btn btn-success center-block" >New Coffee Recipe</button>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-12">
+        <div class="list-group">
+            <a class="list-group-item clearfix" *ngFor="let Recipe of recipes">{{ Recipe.name }}
+        </a>
+        </div>
+    </div>
+</div>
