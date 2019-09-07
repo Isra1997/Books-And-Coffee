@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +7,9 @@ import { Component } from '@angular/core';
   
 })
 export class AppComponent {
-  IsSecret=false;
-  log=[];
-  num=0;
-
-  OnDisplay(){
-    this.num++;
-    this.log.push(this.num);
+  clickedFeature="Books";
+  OnNav(tab:string){
+    this.clickedFeature=tab;
   }
-
  
 }
